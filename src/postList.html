@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/postList.css" />
+    <script type="module" src="./js/postList.js" defer></script>
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      icon-path="./img/sprite.svg#logo"
+      highlight-curr="active"
+    />
+    <main>
+      <form class="search-form">
+        <label>
+          <input
+            class="input_search"
+            type="search"
+            name="searchQuery"
+            placeholder="Search images..."
+            autofocus
+          />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <ul class="gallery"></ul>
+      <div class="loader is-hidden">Loading images, please wait...</div>
+      <button type="button" class="load-more is-hidden">Load more</button>
+    </main>
+    <load src="./partials/footer.html" />
+  </body>
+</html>
